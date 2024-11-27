@@ -1,0 +1,76 @@
+.navbar-custom {
+    background-color:rgb(65, 20, 20);
+    padding: 15px;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-custom .navbar-toggler {
+    border: none;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    display: block;
+    position: relative;
+}
+
+.navbar-custom .navbar-toggler-icon::before,
+.navbar-custom .navbar-toggler-icon::after {
+    content: '';
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-custom .navbar-toggler-icon::before {
+    top: -10px;
+}
+
+.navbar-custom .navbar-toggler-icon::after {
+    bottom: -10px;
+}
+
+
+.navbar-nav {
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.modal-header .close {
+    font-size: 1.5rem; 
+    padding: 0.5rem;   
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
